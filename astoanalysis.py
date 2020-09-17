@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
     # You can also confirm your result visually:
     hdulist = fits.open('NGC6302.fits')
-    data = hdulist[0].data[2500:1500][1500:3000][0]
+    data = hdulist[0].data[0:5600][0:4200][1]
     # Arthur Testing
     hdulist.info()
     # print(data.shape)
